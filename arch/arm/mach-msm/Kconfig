@@ -2974,6 +2974,36 @@ config MACH_MONARUDO
 	help
 	  Support for the HTC APQ8064 MONARUDO.
 
+config MACH_DELUXE_J
+        depends on ARCH_APQ8064
+        bool "APQ8064 DELUXE_J"
+        help
+          Support for the HTC APQ8064 DELUXE_J.
+
+config MACH_DELUXE_UB1
+        depends on ARCH_APQ8064
+        bool "APQ8064 DELUXE_UB1"
+        help
+          Support for the HTC APQ8064 DELUXE_UB1.
+
+config MACH_DELUXE_U
+        depends on ARCH_APQ8064
+        bool "APQ8064 DELUXE_U"
+        help
+          Support for the HTC APQ8064 DELUXE_U.
+
+config MACH_DELUXE_UL
+        depends on ARCH_APQ8064
+        bool "APQ8064 DELUXE_UL"
+        help
+          Support for the HTC APQ8064 DELUXE_UL.
+
+config MACH_IMPRESSION_J
+        depends on ARCH_APQ8064
+        bool "APQ8064 IMPRESSION_J"
+        help
+          Support for the HTC APQ8064 IMPRESSION_J.
+
 config MACH_M7_UL
         depends on ARCH_APQ8064
         bool "APQ8064 M7_UL"
