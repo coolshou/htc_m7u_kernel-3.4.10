@@ -225,7 +225,16 @@ endif
 
 ifdef CONFIG_BT
 	obj-$(CONFIG_MACH_MONARUDO) += board-monarudo-rfkill.o  htc_bdaddress.o
+	obj-$(CONFIG_MACH_DELUXE_J) += board-deluxe_j-rfkill.o  htc_bdaddress.o
+	obj-$(CONFIG_MACH_DELUXE_UB1) += board-deluxe_ub1-rfkill.o  htc_bdaddress.o
+	obj-$(CONFIG_MACH_DELUXE_U) += board-deluxe_u-rfkill.o  htc_bdaddress.o
+	obj-$(CONFIG_MACH_IMPRESSION_J) += board-impression_j-rfkill.o  htc_bdaddress.o
 	obj-$(CONFIG_MACH_M7_UL) += board-m7-rfkill.o  htc_bdaddress.o htc_4335_wl_reg.o
+	obj-$(CONFIG_MACH_M7_WLS) += board-m7wl-rfkill.o  htc_bdaddress.o htc_4335_wl_reg.o
+	obj-$(CONFIG_MACH_M7_WLV) += board-m7wl-rfkill.o  htc_bdaddress.o htc_4335_wl_reg.o
+	obj-$(CONFIG_MACH_M7_WLJ) += board-m7wl-rfkill.o  htc_bdaddress.o htc_4335_wl_reg.o
+	obj-$(CONFIG_MACH_M7_DCG) += htc_bdaddress.o
+	obj-$(CONFIG_MACH_M7_DUG) += htc_bdaddress.o
 endif
 
 #ifdef CONFIG_MSM_CAMERA_V4L2
@@ -426,10 +435,28 @@ obj-$(CONFIG_MACH_APQ8064_LIQUID) += board-8064-all.o board-8064-regulator.o
 obj-$(CONFIG_MACH_MPQ8064_HRD) += board-8064-all.o board-8064-regulator.o
 obj-$(CONFIG_MACH_MPQ8064_DTV) += board-8064-all.o board-8064-regulator.o
 obj-$(CONFIG_MACH_MONARUDO) += board-monarudo-all.o board-monarudo-regulator.o
+obj-$(CONFIG_MACH_DELUXE_J) += board-deluxe_j-all.o board-deluxe_j-regulator.o
+obj-$(CONFIG_MACH_DELUXE_UB1) += board-deluxe_ub1-all.o board-deluxe_ub1-regulator.o
+obj-$(CONFIG_MACH_DELUXE_U) += board-deluxe_u-all.o board-deluxe_u-regulator.o
+obj-$(CONFIG_MACH_IMPRESSION_J) += board-impression_j-all.o board-impression_j-regulator.o
 obj-$(CONFIG_MACH_M7_UL) += board-m7-all.o board-m7-regulator.o
+obj-$(CONFIG_MACH_M7_WLS) += board-m7wls-all.o board-m7wl-regulator.o
+obj-$(CONFIG_MACH_M7_WLV) += board-m7wlv-all.o board-m7wl-regulator.o
+obj-$(CONFIG_MACH_M7_WLJ) += board-m7wlj-all.o board-m7wlj-regulator.o
+obj-$(CONFIG_MACH_M7_DCG) += board-m7dcg-all.o board-m7china-regulator.o
+obj-$(CONFIG_MACH_M7_DUG) += board-m7dug-all.o board-m7china-regulator.o
 
 obj-$(CONFIG_MACH_MONARUDO) += htc_util.o
+obj-$(CONFIG_MACH_DELUXE_J) += htc_util.o
+obj-$(CONFIG_MACH_DELUXE_UB1) += htc_util.o
+obj-$(CONFIG_MACH_DELUXE_U) += htc_util.o
+obj-$(CONFIG_MACH_IMPRESSION_J) += htc_util.o
 obj-$(CONFIG_MACH_M7_UL) += htc_util.o
+obj-$(CONFIG_MACH_M7_WLS) += htc_util.o
+obj-$(CONFIG_MACH_M7_WLV) += htc_util.o
+obj-$(CONFIG_MACH_M7_WLJ) += htc_util.o
+obj-$(CONFIG_MACH_M7_DCG) += htc_util.o
+obj-$(CONFIG_MACH_M7_DUG) += htc_util.o
 obj-$(CONFIG_MACH_ELITE) += board-elite.o board-elite-regulator.o board-elite-gpiomux.o board-elite-storage.o board-elite-audio.o board-elite-camera.o
 obj-$(CONFIG_MACH_ELITE) += board-elite-keypad.o
 obj-$(CONFIG_MACH_ELITE) += htc_bdaddress.o
