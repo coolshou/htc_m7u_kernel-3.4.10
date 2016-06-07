@@ -1,9 +1,9 @@
 config BCMDHD_4334
-	tristate "Broadcom 4329/30 wireless cards support"
+	tristate "Broadcom 4334 wireless cards support"
 	depends on MMC
 	---help---
 	  This module adds support for wireless adapters based on
-	  Broadcom 4329/30 chipset.
+	  Broadcom 4334 chipset.
 
 	  This driver uses the kernel's wireless extensions subsystem.
 
